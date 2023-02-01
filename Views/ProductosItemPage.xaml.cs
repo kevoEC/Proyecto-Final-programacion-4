@@ -9,6 +9,7 @@ public partial class ProductosItemPage : ContentPage
     Producto Item = new Producto();
     Producto Aux = new Producto();
     bool _flag;
+    string img;
     public ProductosItemPage()
 	{
 		InitializeComponent();
@@ -36,6 +37,7 @@ public partial class ProductosItemPage : ContentPage
         }
 
         var stream = result.FullPath;
+        img = stream.ToString();
     }
 
     private async void OnSaveClicked(object sender, EventArgs e)
@@ -45,7 +47,7 @@ public partial class ProductosItemPage : ContentPage
         Item.Descripcion = descripcion.Text;
         Item.Precio = Convert.ToInt32(precio.Text);
         Item.Stock = Convert.ToInt32(stock.Text);
-        Item.RutaImagen = rutaimagen.Text;
+        Item.RutaImagen = img;
         Item.Activo = _flag;
 
         if (string.IsNullOrEmpty(Item.Descripcion))
@@ -55,6 +57,8 @@ public partial class ProductosItemPage : ContentPage
         App.proyectoREPO.AgregarProducto(Item);
         await Shell.Current.GoToAsync("..");
     }
+
+
 
     private void OnCancelClicked(object sender, EventArgs e)
     {

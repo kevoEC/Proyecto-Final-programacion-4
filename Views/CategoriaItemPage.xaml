@@ -11,23 +11,35 @@
         <VerticalStackLayout Padding="20"
                              Spacing="10"
                             VerticalOptions="StartAndExpand">
-            <Label Text="Nombre de la Categoria" />
-            <Entry x:Name="descripcion" Text="{Binding Descripcion}" />
-            <Label Text="¿La marca se encuentra activa?" />
-            <CheckBox x:Name="check"     
+            <BoxView Color="White" HeightRequest="10"/>
+            <Label Text="Nombre de la Categoria" FontSize="20" FontAttributes="Bold" />
+            <Entry x:Name="descripcion" Text="{Binding Descripcion}" Placeholder="Ingrese el nombre de la categoria" TextColor="Gray"/>
+            <BoxView Color="Purple" HeightRequest="1"/>
+            <BoxView Color="White" HeightRequest="10"/>
+            <Label Text="¿La categoria se encuentra activa?" FontSize="20" FontAttributes="Bold" />
+            <CheckBox x:Name="check"
+                        HorizontalOptions="Start"
+                        Color="Purple"
                         CheckedChanged="OnCheckBoxCheckedChanged" />
-            <Label Text="Fecha actual: " />
+            <BoxView Color="Purple" HeightRequest="1"/>
+            <BoxView Color="White" HeightRequest="10"/>
+            <Label Text="Fecha actual: " HorizontalOptions="Center"/>
             <Label x:Name="fuente"
+                   HorizontalOptions="Center"
                    Text="{Binding DateTime, StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}">
                 <Label.BindingContext>
                     <local:DateViewModel/>
                 </Label.BindingContext>
             </Label>
+            <BoxView Color="White" HeightRequest="10"/>
             <Button Text="Guardar"
+                    Padding="4" CornerRadius="10" WidthRequest="300" HeightRequest="40"
                     Clicked="OnSaveClicked" />
             <Button Text="Borrar"
+                    Padding="4" CornerRadius="10" WidthRequest="300" HeightRequest="40"
                     Clicked="DeletedClicked" />
             <Button Text="Cancelar"
+                    Padding="4" CornerRadius="10" WidthRequest="300" HeightRequest="40"
                     Clicked="OnCancelClicked" />
 
         </VerticalStackLayout>

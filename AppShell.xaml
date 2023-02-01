@@ -17,7 +17,7 @@
              />
         </Tab>
         
-        <Tab Title="Marcas"
+        <Tab Title="Categorias"
              Icon="icons8_sorting_64.png">
             <ShellContent
                 Title="Todas las categorias"
@@ -26,7 +26,7 @@
             />
         </Tab>
 
-        <Tab Title="Categorias"
+        <Tab Title="Marcas"
              Icon="icons8_north_west_64.png">
             <ShellContent
                 Title="Todas las marcas"

@@ -28507,11 +28507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rosco\\OneDrive\\Escritorio\\Programacion4\\ProyectoFinalProgramacion4\\ProyectoFinalProgramacion4.csproj",
+      "projectUniqueName": "C:\\Users\\rosco\\source\\repos\\Proyecto-Final-programacion-4\\ProyectoFinalProgramacion4.csproj",
       "projectName": "ProyectoFinalProgramacion4",
-      "projectPath": "C:\\Users\\rosco\\OneDrive\\Escritorio\\Programacion4\\ProyectoFinalProgramacion4\\ProyectoFinalProgramacion4.csproj",
+      "projectPath": "C:\\Users\\rosco\\source\\repos\\Proyecto-Final-programacion-4\\ProyectoFinalProgramacion4.csproj",
       "packagesPath": "C:\\Users\\rosco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rosco\\OneDrive\\Escritorio\\Programacion4\\ProyectoFinalProgramacion4\\obj\\",
+      "outputPath": "C:\\Users\\rosco\\source\\repos\\Proyecto-Final-programacion-4\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

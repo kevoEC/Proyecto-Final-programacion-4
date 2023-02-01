@@ -6,15 +6,15 @@
              Title="TODAS LAS MARCAS">
     <ScrollView>
         <Grid RowDefinitions="*,Auto">
-                <CollectionView x:Name="listPageMarca"
+            <CollectionView x:Name="listPageMarca"
                             ItemsLayout="VerticalList"
                             ItemsSource="{Binding Items}"
                             SelectionMode="Single"
                             SelectionChanged="cambioMarca">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate x:DataType="models:Marca">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Marca">
                         <HorizontalStackLayout Padding="10">
-                            <Image Source="imagen_marca_negra.jpg"
+                            <Image Source="check_marca.png"
                                    HeightRequest="100"
                                    WidthRequest="100"
                                    Aspect="AspectFill"/>
@@ -27,16 +27,16 @@
                             </VerticalStackLayout>
                         </HorizontalStackLayout>
                     </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-                <Grid Grid.Row="1" ColumnDefinitions="*,*" BackgroundColor="#f2f2f4">
-                    <Button Grid.Row="0" Grid.Column="1" 
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Grid Grid.Row="1" ColumnDefinitions="*,*" BackgroundColor="#f2f2f4">
+                <Button Grid.Row="0" Grid.Column="1" 
                     Text="Nueva Marca" 
                     Clicked="OnItemAddedMarca" 
                     FontAttributes="Bold"
                     Margin="20"
                     CornerRadius="20"/>
-                    <Button Grid.Row="0" Grid.Column="0" 
+                <Button Grid.Row="0" Grid.Column="0" 
                     BackgroundColor="White"
                     TextColor="#512bd4"
                     BorderColor="#512bd4"
@@ -46,7 +46,7 @@
                     Clicked="ActualizarDatosMarca" 
                     Margin="20"
                     CornerRadius="20"/>
-                </Grid>
             </Grid>
+        </Grid>
     </ScrollView>
 </ContentPage>

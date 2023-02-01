@@ -50,6 +50,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\categories_collapse_icon_215799.png" />
+	  <None Remove="Resources\Images\check_marca.png" />
 	  <None Remove="Resources\Images\crea_rapidamente.png" />
 	  <None Remove="Resources\Images\icons8_home_64.png" />
 	  <None Remove="Resources\Images\icons8_north_west_64.png" />

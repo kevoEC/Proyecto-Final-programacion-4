@@ -8,86 +8,56 @@
              Title="Creacion de un producto">
 
 
-      <ScrollView>
+    <ScrollView>
         <VerticalStackLayout Padding="20"
                              Spacing="10"
                             VerticalOptions="StartAndExpand">
-            <BoxView Color="White" HeightRequest="10"/>
-            <Label Text="Nombre del Producto" FontSize="20" 
-            FontAttributes="Bold"/>
-            <Entry x:Name="nombre" Text="{Binding Name}" 
-                   Placeholder="Ingrese el nombre del producto" 
-                   TextColor="Gray"/>
-            <BoxView Color="Purple" 
-                     HeightRequest="1"/>
-            <BoxView Color="White" 
-                     HeightRequest="10"/>
-            <Label Text="Descripcion del Producto"  
-                   FontSize="20" 
-                   FontAttributes="Bold"/>
-            <Entry x:Name="descripcion" Text="{Binding Descripcion}" 
-                   Placeholder="Ingrese la descripcion del producto"  
-                   TextColor="Gray"/>
-            <BoxView Color="Purple" 
-                     HeightRequest="1"/>
-            <BoxView Color="White" 
-                     HeightRequest="10"/>
-            <Label Text="Precio del Producto" 
-                   FontSize="20" 
-                   FontAttributes="Bold"/>
-            <Entry x:Name="precio" 
-                   Text="{Binding Precio}" 
-                   Placeholder="Ingrese la descripcion del producto" 
-                   TextColor="Gray"/>
-            <BoxView Color="Purple" 
-                     HeightRequest="1"/>
-            <BoxView Color="White" 
-                     HeightRequest="10"/>
-            <Label Text="Stock del Producto" 
-                   FontSize="20" 
-                   FontAttributes="Bold" />
-            <Entry x:Name="stock" Text="{Binding Stock}"  
-                   Placeholder="Ingrese la descripcion del producto" 
-                   TextColor="Gray"/>
-            <BoxView Color="Purple" 
-                     HeightRequest="1"/>
-            <BoxView Color="White" 
-                     HeightRequest="10"/>
-            <Label Text="¿La marca se encuentra activa?" 
-                   FontSize="20" 
-                   FontAttributes="Bold" />
-            <CheckBox x:Name="check"
+                <BoxView Color="White" HeightRequest="10"/>
+                <Label Text="Nombre del Producto" FontSize="20" FontAttributes="Bold"/>
+                <Entry x:Name="nombre" Text="{Binding Name}" Placeholder="Ingrese el nombre del producto" TextColor="Gray"/>
+                <BoxView Color="Purple" HeightRequest="1"/>
+                <BoxView Color="White" HeightRequest="10"/>
+                <Label Text="Descripcion del Producto"  FontSize="20" FontAttributes="Bold"/>
+                <Entry x:Name="descripcion" Text="{Binding Descripcion}" Placeholder="Ingrese la descripcion del producto" TextColor="Gray"/>
+                <BoxView Color="Purple" HeightRequest="1"/>
+                <BoxView Color="White" HeightRequest="10"/>
+                <Label Text="Precio del Producto" FontSize="20" FontAttributes="Bold"/>
+                <Entry x:Name="precio" Text="{Binding Precio}" Placeholder="Ingrese la descripcion del producto" TextColor="Gray"/>
+                <BoxView Color="Purple" HeightRequest="1"/>
+                <BoxView Color="White" HeightRequest="10"/>
+                <Label Text="Stock del Producto" FontSize="20" FontAttributes="Bold" />
+                <Entry x:Name="stock" Text="{Binding Stock}" Placeholder="Ingrese la descripcion del producto" TextColor="Gray"/>
+                <BoxView Color="Purple" HeightRequest="1"/>
+                <BoxView Color="White" HeightRequest="10"/>
+                <Label Text="¿El producto se encuentra activa?" FontSize="20" FontAttributes="Bold" />
+                <CheckBox x:Name="check"
+                        Color="Purple"
                         HorizontalOptions="Start"
                         CheckedChanged="OnCheckBoxCheckedChanged" />
-            <BoxView Color="Purple" 
-                     HeightRequest="1"/>
-            <BoxView Color="White" 
+                <BoxView Color="Purple" HeightRequest="1"/>
+                <BoxView Color="White" HeightRequest="10"/>
+                <Button x:Name="rutaimagen" ImageSource="imagenes_icono_boton.png" Clicked="mostrarBuscadorDeArchivos" Text="{Binding RutaImagen}" Padding="2" CornerRadius="10" WidthRequest="300"></Button>
+                <BoxView Color="White" HeightRequest="10"/>
+                <Label Text="Nombre del Producto" FontSize="20" 
+                 FontAttributes="Bold"/>
+                <BoxView Color="White" 
                      HeightRequest="10"/>
-            <Button x:Name="rutaimagen"   
-                    ImageSource="imagenes_icono_boton.png" 
-                    Clicked="mostrarBuscadorDeArchivos" 
-                    Text="{Binding RutaImagen} " 
-                    Padding="2" CornerRadius="10" 
-                    WidthRequest="300">
-             </Button>
-            <BoxView Color="White" 
-                     HeightRequest="10"/>
-            <Label Text="Fecha actual: " HorizontalOptions="Center"/>
-            <Label x:Name="fuente"
+                <Label Text="Fecha actual: " HorizontalOptions="Center"/>
+                <Label x:Name="fuente"
                    HorizontalOptions="Center"
                    Text="{Binding DateTime, StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}">
-                <Label.BindingContext>
-                    <local:DateViewModel/>
-                </Label.BindingContext>
-            </Label>
-            <BoxView Color="White" HeightRequest="10"/>
-            <Button Text="Guardar"
+                    <Label.BindingContext>
+                        <local:DateViewModel/>
+                    </Label.BindingContext>
+                </Label>
+                <BoxView Color="White" HeightRequest="10"/>
+                <Button Text="Guardar"
                     Padding="4" CornerRadius="10" WidthRequest="300" HeightRequest="40"
                     Clicked="OnSaveClicked" />
-            <Button Text="Borrar"
+                <Button Text="Borrar"
                     Padding="2" CornerRadius="10" WidthRequest="300" HeightRequest="40"
                     Clicked="DeletedClicked" />
-            <Button Text="Cancelar"
+                <Button Text="Cancelar"
                     Padding="2" CornerRadius="10" WidthRequest="300" HeightRequest="40"
                     Clicked="OnCancelClicked" />
 
