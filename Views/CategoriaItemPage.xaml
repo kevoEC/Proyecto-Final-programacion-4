@@ -6,9 +6,11 @@
              xmlns:local="clr-namespace:ProyectoFinalProgramacion4.ViewModels"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              Title="Creacion de Categoria">
+    
 
     <ScrollView>
-        <VerticalStackLayout Padding="20"
+        <VerticalStackLayout BindingContext="{Binding IsBusy}"
+                             Padding="20"
                              Spacing="10"
                             VerticalOptions="StartAndExpand">
             <BoxView Color="White" HeightRequest="10"/>

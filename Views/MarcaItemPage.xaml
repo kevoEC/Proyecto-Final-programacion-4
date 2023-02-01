@@ -8,7 +8,8 @@
              Title="Creacion de Marca">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20"
+        <VerticalStackLayout BindingContext="{Binding IsBusy}" 
+                             Padding="20"
                              Spacing="10"
                             VerticalOptions="StartAndExpand">
             <BoxView Color="White" HeightRequest="10"/>
