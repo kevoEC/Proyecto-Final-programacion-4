@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
+    <ActiveDebugFramework>net6.0-android</ActiveDebugFramework>
+    <ActiveDebugProfile>Phone M-DPI 5.4in - API 28 (Android 9.0 - API 28)</ActiveDebugProfile>
+    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+    <DefaultDevice>phone_m-dpi_5_4in_-_api_28</DefaultDevice>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <MauiXaml Update="Views\CategoriaItemPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\CategoriaListPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\MarcaItemPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\MarcaListPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\ProductosItemPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\ProductosListPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+  </ItemGroup>
+</Project>

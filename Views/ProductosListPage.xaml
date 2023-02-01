@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalProgramacion4.Views.ProductosListPage"
+             xmlns:models="clr-namespace:ProyectoFinalProgramacion4.Models"
+             Title="Todas las productos">
+    <ScrollView>
+        <Grid RowDefinitions="*,Auto">
+            <CollectionView x:Name="listPageProductos"
+                        ItemsSource="{Binding Items}"
+                        ItemsLayout="VerticalList"
+                        SelectionMode="Single"
+                        SelectionChanged="cambioProducto">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Producto">
+                        <HorizontalStackLayout Padding="10">
+                            <Image Source="{Binding RutaImagen}"
+                                   HeightRequest="100"
+                                   WidthRequest="100"
+                                   Aspect="AspectFill"/>
+                            <VerticalStackLayout Padding="10" Spacing="4" VerticalOptions="Center">
+                                <BoxView Color="White" HeightRequest="20"/>
+                                <Label Text="{Binding Nombre}" FontSize="24"></Label>
+                                <Label Text="{Binding Descripcion}" FontSize="24"></Label>
+                                <Label Text="{Binding Precio}" FontSize="24"></Label>
+                                <Label Text="{Binding Stock}" FontSize="24"></Label>
+                                <Label Text="{Binding Activo}" FontSize="24"></Label>
+                                <BoxView Color="White" HeightRequest="20"/>
+                                <BoxView Color="Purple" HeightRequest="1"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Grid Grid.Row="1" ColumnDefinitions="*,*" BackgroundColor="#f2f2f4">
+                <Button Grid.Row="0" Grid.Column="1" 
+                    Text="Nuevo Producto" 
+                    Clicked="OnItemAddedProducto" 
+                    FontAttributes="Bold"
+                    Margin="20"
+                    CornerRadius="20"/>
+                <Button Grid.Row="0" Grid.Column="0" 
+                    BackgroundColor="White"
+                    TextColor="#512bd4"
+                    BorderColor="#512bd4"
+                    BorderWidth="1"
+                    Text="Actualizar Productos" 
+                    FontAttributes="Bold"
+                    Clicked="ActualizarDatosProducto" 
+                    Margin="20"
+                    CornerRadius="20"/>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

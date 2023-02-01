@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalProgramacion4.Views.ProductosItemPage"
+             xmlns:models="clr-namespace:ProyectoFinalProgramacion4.Models"
+             xmlns:local="clr-namespace:ProyectoFinalProgramacion4.ViewModels"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             Title="Creacion de un producto">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                             Spacing="10"
+                            VerticalOptions="StartAndExpand">
+            <Label Text="Nombre del Producto" />
+            <Entry x:Name="nombre" Text="{Binding Name}" />
+            <Label Text="Descripcion del Producto" />
+            <Entry x:Name="descripcion" Text="{Binding Descripcion}" />
+            <Label Text="Precio del Producto" />
+            <Entry x:Name="precio" Text="{Binding Precio}" />
+            <Label Text="Stock del Producto" />
+            <Entry x:Name="stock" Text="{Binding Stock}" />
+            <Label Text="¿La marca se encuentra activa?" />
+            <CheckBox x:Name="check"     
+                        CheckedChanged="OnCheckBoxCheckedChanged" />
+            <Button x:Name="rutaimagen" ImageSource="imagenes_icono_boton.png" Clicked="mostrarBuscadorDeArchivos" Text="{Binding RutaImagen}"></Button>
+            <Label Text="Fecha actual: " />
+            <Label x:Name="fuente"
+                   Text="{Binding DateTime, StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}">
+                <Label.BindingContext>
+                    <local:DateViewModel/>
+                </Label.BindingContext>
+            </Label>
+            <Button Text="Guardar"
+                    Clicked="OnSaveClicked" />
+            <Button Text="Borrar"
+                    Clicked="DeletedClicked" />
+            <Button Text="Cancelar"
+                    Clicked="OnCancelClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ProyectoFinalProgramacion4.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:ProyectoFinalProgramacion4.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <FlyoutItem>
+        <Tab Title="Home"
+             Icon="icons8_home_64.png">
+            <ShellContent
+                Title="Inicio"
+                ContentTemplate="{DataTemplate views:HomePage}"
+                Route="Inicio" 
+                Icon="icons8_home_64"
+             />
+        </Tab>
+        
+        <Tab Title="Marcas"
+             Icon="icons8_sorting_64.png">
+            <ShellContent
+                Title="Todas las categorias"
+                ContentTemplate="{DataTemplate views:CategoriaListPage}"
+                Route="Todas las categorias"
+            />
+        </Tab>
+
+        <Tab Title="Categorias"
+             Icon="icons8_north_west_64.png">
+            <ShellContent
+                Title="Todas las marcas"
+                ContentTemplate="{DataTemplate views:MarcaListPage}"
+                Route="Todas las marcas"
+                Icon="icons8_north_west_64"
+             />
+        </Tab>
+
+
+
+        <Tab Title="Productos"
+             Icon="icons8_product_64.png">
+            <ShellContent
+                Title="Todos los productos"
+                ContentTemplate="{DataTemplate views:ProductosListPage}"
+                Route="Todos los productos"
+                Icon="icons8_product_64"
+            />
+        </Tab>
+    </FlyoutItem>
+
+    <ShellContent
+        Title="Creacion de Marca"
+        ContentTemplate="{DataTemplate views:MarcaItemPage}"
+        Route="Creacion de Marca" 
+        />
+
+    <ShellContent
+        Title="Creacion de Categoria"
+        ContentTemplate="{DataTemplate views:CategoriaItemPage}"
+        Route="Creacion de Categoria" 
+        />
+
+    <ShellContent
+        Title="Creacion de Producto"
+        ContentTemplate="{DataTemplate views:ProductosItemPage}"
+        Route="Creacion de Producto" 
+        />
+
+</Shell>
