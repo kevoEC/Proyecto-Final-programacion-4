@@ -8,10 +8,13 @@
              Title="Creacion de un producto">
 
 
-    <ScrollView>
+      <ScrollView>
         <VerticalStackLayout Padding="20"
                              Spacing="10"
                             VerticalOptions="StartAndExpand">
+            <BoxView Color="White" HeightRequest="10"/>
+            <Label Text="Nombre del Producto" FontSize="20" FontAttributes="Bold"/>
+
             <Label Text="Nombre del Producto" />
             <Entry x:Name="nombre" Text="{Binding Name}" />
             <Label Text="Descripcion del Producto" />
