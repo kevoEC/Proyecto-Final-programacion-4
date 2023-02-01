@@ -12,7 +12,7 @@ public partial class HomePage : ContentPage
 
     private async void llamarAPI(object sender, EventArgs e)
     {
-        ReturnContent returnContent;
+        Root returnContent;
         var client = new HttpClient();
         returnContent = await App.API.GetFoto();
         if (returnContent.status == "success")

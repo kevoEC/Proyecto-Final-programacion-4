@@ -11,7 +11,13 @@ namespace ProyectoFinalProgramacion4.Services
 {
     public class FotoCall
     {
-            public async Task<ReturnContent> GetFoto()
+        public class ReturnContent
+        {
+            public string download_url { get; set; }
+            public string status { get; set; }
+        }
+
+        public async Task<Root> GetFoto()
             {
                 var api_key = "03f2MTA4MDM6Nzg0NjpmaWZ6UmN1dlFaazlac0d";
                 var template_id = "b7a77b238845ca58";
@@ -33,7 +39,7 @@ namespace ProyectoFinalProgramacion4.Services
                 var response = await client.PostAsync(url, byteContent);
                 var ret = await response.Content.ReadAsStringAsync();
 
-                var returnContent = JsonSerializer.Deserialize<ReturnContent>(ret);
+                var returnContent = JsonSerializer.Deserialize<Root>(ret);
 
                 return returnContent;
             }
