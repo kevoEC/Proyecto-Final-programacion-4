@@ -61,6 +61,7 @@
 	  <None Remove="Resources\Images\imagen_marca.jpg" />
 	  <None Remove="Resources\Images\imagen_marca_negra.jpg" />
 	  <None Remove="Resources\Images\imagen_principal.png" />
+	  <None Remove="Resources\Images\publicidad_icono.png" />
 	</ItemGroup>
 
 	<ItemGroup>

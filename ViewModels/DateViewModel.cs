@@ -19,11 +19,20 @@ namespace ProyectoFinalProgramacion4.ViewModels
             get => _dateTime;
             set
             {
-                if (_dateTime != value)
-                {
-                    _dateTime = value;
-                    OnPropertyChanged();
-                }
+                //if(connectivity.NetworkAccess != NetworkAccess.Internet)
+                //{
+                //    //await Shell.Current.DisplayAlert("Problemas de conexion", $"Revisa tu conexion e intentalo nuevamente!", "");
+                //    return;
+                //}
+                //else
+                //{
+                    if (_dateTime != value)
+                    {
+                        _dateTime = value;
+                        OnPropertyChanged();
+                    }
+                //}
+
             }
         }
 

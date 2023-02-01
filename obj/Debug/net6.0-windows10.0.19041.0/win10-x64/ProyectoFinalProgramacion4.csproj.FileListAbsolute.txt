@@ -756,3 +756,4 @@ C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-windo
 C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_marca.scale-100.png

@@ -544,3 +544,4 @@ C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-macca
 C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\ProyectoFinalProgramacion4.pdb
 C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\ProyectoFinalProgramacion4.genruntimeconfig.cache
 C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\ref\ProyectoFinalProgramacion4.dll
+C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\check_marca.png

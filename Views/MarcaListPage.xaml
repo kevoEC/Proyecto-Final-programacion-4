@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinalProgramacion4.Views.MarcaListPage"
              xmlns:models="clr-namespace:ProyectoFinalProgramacion4.Models"
+             xmlns:local="clr-namespace:ProyectoFinalProgramacion4.ViewModels"
              Title="TODAS LAS MARCAS">
     <ScrollView>
         <Grid RowDefinitions="*,Auto" BindingContext="{Binding IsBusy}">

@@ -1998,3 +1998,4 @@ C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-andro
 C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-android\resizetizer\r\drawable\check_marca.png
+C:\Users\rosco\source\repos\Proyecto-Final-programacion-4\obj\Debug\net6.0-android\resizetizer\r\drawable\publicidad_icono.png

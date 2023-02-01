@@ -4,7 +4,7 @@
              x:Class="ProyectoFinalProgramacion4.Views.ProductosListPage"
              xmlns:models="clr-namespace:ProyectoFinalProgramacion4.Models"
              xmlns:local="clr-namespace:ProyectoFinalProgramacion4.ViewModels"
-             Title="Todas las productos">
+             Title="TODOS LOS PRODUCTOS">
     <ScrollView>
         <Grid RowDefinitions="*,Auto" BindingContext="{Binding IsBusy}">
             <CollectionView x:Name="listPageProductos"
